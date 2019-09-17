@@ -35,10 +35,10 @@ $color: #000000;
 	  animation: border 3s linear .5s forwards;
 	  img{
 	  	width: auto;opacity: 0;
-	  	animation: imgopacity .6s linear .5s infinite alternate;
+	  	-webkit-animation: imgopacity .6s linear 1s infinite alternate;
+	  	animation: imgopacity .6s linear 1s infinite alternate;
 	  }
 	}
-
 }
 
 @keyframes border{

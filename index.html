@@ -1,586 +1,170 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-    <meta charset="utf-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Binam sen, binam, sen, web designer, front-end developer, html, css, greensock-animation, javascript, jquery" />
-    <meta name="author" content="Binam Sen" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Binam Sen"/>
     <title>Binam Sen</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800|Raleway:300,400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png">
 </head>
 <body>
-    <!-- loader -->
-    <div class="loader text-center">
-        <div class="circle">
-            <img src="img/logo.png">
-        </div>
-        <h2>Welcome !!</h2>
+    <!-- laoder -->
+    <div class="loader">
+    <svg id="loader" width="75" height="90" viewBox="0 0 75 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0" y="0.200012" width="409" height="90" fill="#ffffff">
+        <rect fill="white" y="0.200012" width="75" height="90"/>
+        <path d="M63.7 48.9L63.6 52.8L58.1 53C57.3 57.6667 56 61.4334 54.2 64.3C52.4667 67.1667 49.5333 70.2667 45.4 73.6C41.2667 76.9333 36.3 79.7 30.5 81.9C24.7667 84.1667 19.9667 85.3 16.1 85.3C12.2333 85.3 9.3 84.5 7.3 82.9C5.3 81.3667 4.3 79.3334 4.3 76.8C4.3 72.9334 6.56667 69.0667 11.1 65.2C15.7 61.2667 21.2333 58 27.7 55.4C34.2333 52.7334 40.7 50.9333 47.1 50C46.1 48.3333 44.5667 46.9667 42.5 45.9C40.5 44.8333 37.0667 43.6333 32.2 42.3C29.5333 41.5667 28.2 40.3667 28.2 38.7C28.2 37.7 28.6 36.8 29.4 36C30.2667 35.1333 31.6667 34.1333 33.6 33C35.6 31.8 37.4667 30.6 39.2 29.4C41 28.1333 42.9667 26.6333 45.1 24.9C47.3 23.1667 49.1333 21.3667 50.6 19.5C52.0667 17.6333 52.8 16 52.8 14.6C52.8 12.2667 51.6333 11.1 49.3 11.1C47.5 11.1 45.0333 11.9667 41.9 13.7C38.8333 15.3667 35.8 17.5333 32.8 20.2L28.5 33.8C25.5 43.3333 22.1667 50.7333 18.5 56C14.9 61.2667 11.4667 63.9 8.2 63.9C4.73333 63.9 3 61.7667 3 57.5C3 53.2333 5.06667 47.8 9.2 41.2C13.3333 34.5333 19.0667 27.7 26.4 20.7C26.4 20.6333 26.5667 20.0333 26.9 18.9C27.3 17.7 27.6667 16.5 28 15.3C29.1333 11.7 30 9.40001 30.6 8.40001L35.5 9.20001C35.5 10.4667 35.2333 11.9667 34.7 13.7C38.4333 10.9 42.3667 8.46668 46.5 6.40001C50.7 4.26668 53.7667 3.20001 55.7 3.20001C57.7 3.20001 59.3 3.83335 60.5 5.10001C61.7 6.30001 62.3 8.10001 62.3 10.5C62.3 12.8333 61.1667 15.5333 58.9 18.6C56.7 21.6667 53.9333 24.4333 50.6 26.9C44.5333 31.4333 39.3667 34.7 35.1 36.7C42.0333 37.7667 47.1 39.2 50.3 41C53.5 42.7333 55.8333 45.3667 57.3 48.9H63.7ZM15.1 51.2C19.7667 43.6667 22.8667 35.9333 24.4 28C20.8 31.9333 17.5333 36.4333 14.6 41.5C11.6667 46.5667 10.2 50.2333 10.2 52.5C10.2 53.9 10.6667 54.6 11.6 54.6C12.6 54.6 13.7667 53.4667 15.1 51.2ZM38.3 72.6C41.5667 70.4 44.1667 67.9333 46.1 65.2C48.0333 62.4667 49 59.9 49 57.5C49 56.3667 48.8333 55.2333 48.5 54.1C38.5 55.3 30.2667 57.9333 23.8 62C17.3333 66 14.1 69.8333 14.1 73.5C14.1 75.1 14.7333 76.3667 16 77.3C17.2667 78.3 19 78.8 21.2 78.8C26.6 78.8 32.3 76.7333 38.3 72.6Z"/>
+        </mask>
+        <path d="M63.7 48.9L63.6 52.8L58.1 53C57.3 57.6667 56 61.4334 54.2 64.3C52.4667 67.1667 49.5333 70.2667 45.4 73.6C41.2667 76.9333 36.3 79.7 30.5 81.9C24.7667 84.1667 19.9667 85.3 16.1 85.3C12.2333 85.3 9.3 84.5 7.3 82.9C5.3 81.3667 4.3 79.3334 4.3 76.8C4.3 72.9334 6.56667 69.0667 11.1 65.2C15.7 61.2667 21.2333 58 27.7 55.4C34.2333 52.7334 40.7 50.9333 47.1 50C46.1 48.3333 44.5667 46.9667 42.5 45.9C40.5 44.8333 37.0667 43.6333 32.2 42.3C29.5333 41.5667 28.2 40.3667 28.2 38.7C28.2 37.7 28.6 36.8 29.4 36C30.2667 35.1333 31.6667 34.1333 33.6 33C35.6 31.8 37.4667 30.6 39.2 29.4C41 28.1333 42.9667 26.6333 45.1 24.9C47.3 23.1667 49.1333 21.3667 50.6 19.5C52.0667 17.6333 52.8 16 52.8 14.6C52.8 12.2667 51.6333 11.1 49.3 11.1C47.5 11.1 45.0333 11.9667 41.9 13.7C38.8333 15.3667 35.8 17.5333 32.8 20.2L28.5 33.8C25.5 43.3333 22.1667 50.7333 18.5 56C14.9 61.2667 11.4667 63.9 8.2 63.9C4.73333 63.9 3 61.7667 3 57.5C3 53.2333 5.06667 47.8 9.2 41.2C13.3333 34.5333 19.0667 27.7 26.4 20.7C26.4 20.6333 26.5667 20.0333 26.9 18.9C27.3 17.7 27.6667 16.5 28 15.3C29.1333 11.7 30 9.40001 30.6 8.40001L35.5 9.20001C35.5 10.4667 35.2333 11.9667 34.7 13.7C38.4333 10.9 42.3667 8.46668 46.5 6.40001C50.7 4.26668 53.7667 3.20001 55.7 3.20001C57.7 3.20001 59.3 3.83335 60.5 5.10001C61.7 6.30001 62.3 8.10001 62.3 10.5C62.3 12.8333 61.1667 15.5333 58.9 18.6C56.7 21.6667 53.9333 24.4333 50.6 26.9C44.5333 31.4333 39.3667 34.7 35.1 36.7C42.0333 37.7667 47.1 39.2 50.3 41C53.5 42.7333 55.8333 45.3667 57.3 48.9H63.7ZM15.1 51.2C19.7667 43.6667 22.8667 35.9333 24.4 28C20.8 31.9333 17.5333 36.4333 14.6 41.5C11.6667 46.5667 10.2 50.2333 10.2 52.5C10.2 53.9 10.6667 54.6 11.6 54.6C12.6 54.6 13.7667 53.4667 15.1 51.2ZM38.3 72.6C41.5667 70.4 44.1667 67.9333 46.1 65.2C48.0333 62.4667 49 59.9 49 57.5C49 56.3667 48.8333 55.2333 48.5 54.1C38.5 55.3 30.2667 57.9333 23.8 62C17.3333 66 14.1 69.8333 14.1 73.5C14.1 75.1 14.7333 76.3667 16 77.3C17.2667 78.3 19 78.8 21.2 78.8C26.6 78.8 32.3 76.7333 38.3 72.6Z" stroke="#d54141" stroke-width="2" mask="url(#path-1-outside-1)"/>
+    </svg>
     </div>
-    <!-- loader -->
-    <div id="content-wrapper">
-        <div id="example-wrapper">
-            <div class="scrollContent">
-                <section class="demo" id="section-slides">
-                    <div id="pinContainer">
-                        <div id="slideContainer">
-                            <section class="panel first-panel">
-                                <img src="img/jumboimg.jpg">
-                            <div class="overlay"></div>
-                            <div class="content w-100">
-                                <div class="top nopadding w-100">
-                                    <div class="d-flex logowrap">
-                                        <div class="box" id="slideshow">
-                                            <img src="img/logo.png">
-                                            <img src="img/binam.jpg">
-                                        </div>
-                                        <h1>Binam Sen</h1>
-                                    </div>
-                                    <div class="social">
-                                        <ul>
-                                            <a href="https://www.facebook.com/binam.sen" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
-                                            <a href="https://www.instagram.com/binamsen/" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
-                                            <a href="https://www.linkedin.com/in/binamsen/" target="_blank"><li><i class="fab fa-linkedin-in"></i></li></a>
-                                            <a href="mailto:senbinam@gmail.com"><li><i class="fas fa-envelope"></i></li></a>
-                                        </ul>
-                                    </div>
-                                </div><!--top-->
-                                <div class="aboutme nopadding w-100">
-                                    <h2>HI I'M BINAM</h2>
-                                    <h3>Front-end Developer</h3>
-                                    <p>Skilled in HTML, Bootstrap, CSS, SASS(SCSS), JavaScript(Jquery),  Greensock Animation(GSAP), Responsive Web Design</p>
-                                    <div class="knowmore nopadding">
-                                        Keep Scrolling To Know More<i class="fas fa-angle-double-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            </section>
-                            <section class="panel second-panel">
-                                <img src="img/jumboimg.jpg">
-                            <div class="overlay"></div>
-                            <div class="content w-100">
-                                <div class="top nopadding w-100">
-                                    <h2>A look into my works</h2>
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12 nopadding listwrap">
-                                    <div class="w-100 alllist">
-                                    <a href="http://missnepal.com.np" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="1000">
-                                              <img src="img/resized/missnepal4.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="2000">
-                                              <img src="img/resized/missnepal5.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="3000">
-                                              <img src="img/resized/missnepal6.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Miss Nepal</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="https://redmudcoffee.com" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="2000">
-                                              <img src="img/resized/redmud1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/redmud2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Redmud Coffee</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="https://www.nepaltraveladventure.com/" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/nepaltravel1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="5000">
-                                              <img src="img/resized/nepaltravel2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Nepal Travel Adventure</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="https://www.chillipromotions.com.au/" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/chilli1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/chilli2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="5000">
-                                              <img src="img/resized/chilli3.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Chilli Promotions</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="https://eimun.global" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="4000">
-                                              <img src="img/resized/eimun1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="5000">
-                                              <img src="img/resized/eimun2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Eimun Global</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="https://www.traveladventurenepal.com.au/" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/adventure1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/adventure2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Travel Adventure Nepal</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    </div><!--alllist-->
-                                    <!-- owl-carousel -->
-                                    <div class="owl-carousel owl-theme">
-                                        <a href="http://missnepal.com.np" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="1000">
-                                              <img src="img/resized/missnepal4.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="2000">
-                                              <img src="img/resized/missnepal5.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="3000">
-                                              <img src="img/resized/missnepal6.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Miss Nepal</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="https://redmudcoffee.com" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="2000">
-                                              <img src="img/resized/redmud1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/redmud2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Redmud Coffee</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="https://www.nepaltraveladventure.com/" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/nepaltravel1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="5000">
-                                              <img src="img/resized/nepaltravel2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Nepal Travel Adventure</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="https://www.chillipromotions.com.au/" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/chilli1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/chilli2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="5000">
-                                              <img src="img/resized/chilli3.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Chilli Promotions</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="http://eimun.global" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="4000">
-                                              <img src="img/resized/eimun1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="5000">
-                                              <img src="img/resized/eimun2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Eimun Global</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="https://www.traveladventurenepal.com.au/" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/adventure1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/adventure2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Travel Adventure Nepal</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    </div><!--owlcarousel-->
-                                </div><!--listwrap-->
-                                <div class="knowmore nopadding">
-                                    Keep Scrolling To Know More<i class="fas fa-angle-double-right"></i>
-                                </div>
-                            </div>
-                            </section>
-                            <!-- second-panel -->
-                            <section class="panel second-panel">
-                                <img src="img/jumboimg.jpg">
-                            <div class="overlay"></div>
-                            <div class="content w-100">
-                                <div class="top nopadding w-100">
-                                    <h2>My works continued...</h2>
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12 nopadding listwrap">
-                                    <div class="w-100 alllist">
-                                    <a href="http://eplt20.com.np" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="1000">
-                                              <img src="img/resized/epl1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="2000">
-                                              <img src="img/resized/epl2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="3000">
-                                              <img src="img/resized/epl3.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Everest Premier League</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="https://www.himalayanexcursionnepal.com/" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="2000">
-                                              <img src="img/resized/himal1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/himal2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>himalayan excursion nepal</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="http://everesttrek.com.au" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/everest1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/everest2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="5000">
-                                              <img src="img/resized/everest3.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Everest Trek</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    
-                                    <a href="https://www.publicspeakernepal.com/" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/public1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/public2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Public Speaker Nepal</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="http://ytsnepal.org" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/yts1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/yts2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="5000">
-                                              <img src="img/resized/yts3.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Youth Thinkers' Society</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="http://bodhitech.com.au/" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/bodhi1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="5000">
-                                              <img src="img/resized/bodhi2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Bodhi Tech</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    </div><!--alllist-->
-                                    <div class="owl-carousel owl-theme">
-                                        <a href="http://eplt20.com.np" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="1000">
-                                              <img src="img/resized/epl1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="2000">
-                                              <img src="img/resized/epl2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="3000">
-                                              <img src="img/resized/epl3.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Everest Premier League</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                        </div></a>
-                                        <a href="http://everesttrek.com.au" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/everest1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/everest2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="5000">
-                                              <img src="img/resized/everest3.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Everest Trek</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="https://www.himalayanexcursionnepal.com/" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="2000">
-                                              <img src="img/resized/himal1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/himal2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>himalayan excursion nepal</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="http://bodhitech.com.au/" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/bodhi1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="5000">
-                                              <img src="img/resized/bodhi2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Bodhi Tech</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="https://www.publicspeakernepal.com/" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/public1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/public2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Public Speaker Nepal</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    <a href="http://ytsnepal.org" target="_blank"><div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
-                                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                                          <div class="carousel-inner">
-                                            <div class="carousel-item active" data-interval="3000">
-                                              <img src="img/resized/yts1.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="4000">
-                                              <img src="img/resized/yts2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item" data-interval="5000">
-                                              <img src="img/resized/yts3.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="content-overlay"></div>
-                                        <div class="content-details fadeIn-bottom">
-                                            <h4>Youth Thinkers' Society</h4>
-                                            <p>Visit site<i class="fas fa-long-arrow-alt-right"></i></p>
-                                        </div>
-                                    </div></a>
-                                    </div><!--owl-carousel-->
-                                </div><!--listwrap-->
-                            </div>
-                            </section>
-                            <!-- <section class="panel bordeaux">
-                                <b>FOUR</b>
-                            </section> -->
-                        </div>
+    <!-- laoder -->
+
+    <!-- navbar -->
+    <section id="navbar" class="container-fluid fixed-top">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <b>MENU</b>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutme">about me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="myportfolio">my portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactme">contact me</a>
+                            </li>
+                        </ul>
                     </div>
-                </section>
+                </nav>           
             </div>
         </div>
-    </div>
+    </section>
+    <!-- navbar -->
+
+    <!-- topcontent -->
+    <section class="container-fluid top-sec scroll-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12 content-wrap">
+                    <h2>welcome !!</h2>
+                    <h1>i'm <span>binam sen<span></h1>
+                    <h5>web designer / frontend developer</h5>
+                    <img src="img/vector-boy.png" alt="vector1">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            SCROLLDOWN
+            <div class="scroll-box">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+        </div>
+    </section>
+    <!-- topcontent -->
+
+    <!-- aboutcontent -->
+    <section class="container-fluid about-sec scroll-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12 content-wrap nopadding">
+                    <div class="col-md-7 col-sm-12 col-lg-7 col-xl-7 text-col">
+                    <h2>About me</h2>
+                    <hr>
+                    <p>Putting my ideas and creativity to give life to the design proposed by the Client along with that the style and user experience being the key focus.</p>
+                    <a href="aboutme" class="more-btn"><span>Read More</span></a>
+                    </div>
+                    <img src="img/vector6.png" alt="vector2">
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- aboutcontent -->
+
+    <section class="container-fluid ido">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
+                    <div class="inside">
+                        <img src="img/develop.png" alt="develop">
+                        <h4>Frontend Development</h4>
+                        <p>Bringing beautiful website designs into life where user experience and style of the website is the key focus.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
+                    <div class="inside">
+                        <img src="img/responsive.png" alt="responsive">
+                        <h4>Responsive Design</h4>
+                        <p>Creating a website which is completely compatible and responsive with any devices.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 col4">
+                    <div class="inside">
+                        <img src="img/seo.png" alt="seo">
+                        <h4>Search Engine Optimization</h4>
+                        <p>SEO friendly development is the main key element that I have been focusing for each and every clients. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfoliocontent -->
+    <section class="container-fluid portfolio-sec scroll-sec">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12 content-wrap nopadding">
+                <div class="col-md-7 col-sm-12 col-lg-7 col-xl-7 text-col">
+                    <h2>My Portfolio</h2>
+                    <hr>
+                    <p>During my professional career, I have done many projects which includes "Travel" , 
+                        "E-commerce" "Organizations (Business , NGO , INGO)" , "Pageant" websites.</p>
+                    <p>Please click below to have a detail view of my portfolio.</p>
+                    <a href="myportfolio" class="more-btn"><span>View Portfolio</span></a>
+                </div>
+                <img src="img/vector7.png" alt="vector3">
+            </div>
+        </div>
+    </section>
+    <!-- portfoliocontent -->
+    
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12 text-center">
+                <p>Copyright © 2019 All rights reserved | Binam Sen <a href="binam_sen_resume.pdf" target="_blank">View Resume</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script type="text/javascript" src="js/animation.gsap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/style.js"></script>
-    <script type="text/javascript">
-        $('.owl-carousel').owlCarousel({
-        loop:false,
-        margin:0,
-        responsiveClass:true,
-        nav:false,
-        autoplay:true,
-        autoplayTimeout:6000,
-        responsive:{
-            0:{
-                loop:true,
-                items:1,
-                autoplay:true,
-            },
-            600:{
-                loop:true,
-                items:2,
-                autoplay:true,
-            },
-            768:{
-                loop:true,
-                items:2,
-                autoplay:true,
-            },
-            1000:{
-                items:3,
-                loop:false
-            }
-        }
-    })
-    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
 </body>
 </html>

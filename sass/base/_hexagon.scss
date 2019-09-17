@@ -1,0 +1,74 @@
+// hexagon-shape
+.hexagon {
+    position: relative;
+    width: 300px; 
+    height: 173.21px;
+    margin: 100px auto;
+    background-image: url(../img/profile-image.jpg);
+    background-size: auto 323.3162px;
+    background-position: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-left: solid 10px #ffffff;
+    border-right: solid 10px #ffffff;
+}
+  
+.hexTop,
+.hexBottom {
+    position: absolute;
+    z-index: 1;
+    width: 212.13px;
+    height: 212.13px;
+    overflow: hidden;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background: inherit;
+    left: 33.93px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+  
+.hexTop:after,
+.hexBottom:after {
+    content: "";
+    position: absolute;
+    width: 280.0000px;
+    height: 161.65807537309524px;
+    -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-80.8290px);
+    -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-80.8290px);
+    transform:          rotate(45deg) scaleY(1.7321) translateY(-80.8290px);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: inherit;
+}
+  
+.hexTop {
+    top: -106.0660px;
+    border-top: solid 14.1421px #ffffff;
+    border-right: solid 14.1421px #ffffff;
+}
+  
+.hexTop:after {
+    background-position: center top;
+}
+  
+.hexBottom {
+    bottom: -106.0660px;
+    border-bottom: solid 14.1421px #ffffff;
+    border-left: solid 14.1421px #ffffff;
+}
+  
+.hexBottom:after {
+    background-position: center bottom;
+}
+  
+.hexagon:after {
+    content: "";
+    position: absolute;
+    top: 5.7735px;
+    left: 0;
+    width: 280.0000px;
+    height: 161.6581px;
+    z-index: 2;
+    background: inherit;
+}
