@@ -1,6 +1,6 @@
 $(window).on('load',(function () {
   var $sitePreloaderSelector = $('.loader');
-  $sitePreloaderSelector.delay(1000).fadeOut(500);
+  $sitePreloaderSelector.delay(500).fadeOut(500);
 }));
 // getting length of letter
 const logo = document.querySelectorAll("#loader path");
