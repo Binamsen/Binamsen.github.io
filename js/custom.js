@@ -8,38 +8,13 @@ for (let i = 0; i<logo.length; i++) {
 	console.log(`Letter ${i} is ${logo[i].getTotalLength()}`)
 }
 
-// $(document).ready(function() {
-//   $(".portfolio-wrapper .view-detail").click(function(){
-//     $(".project-detail").css({"right":"0","width":"100%"});
-//   });
-//   $(".project-detail .close-btn").click(function(){
-//     $(".project-detail").css({"right":"100vw","width":"0%"});
-//   });
-//   $(".portfolio-wrapper .row .col4:nth-child(1)").click(function(){
-//     $(".project-detail .content:nth-child(1)").show().css({"display":"inline-block"});
-//     $(".project-detail .content:nth-child(1)").siblings(".content").hide().css({"display":"none"});
-//   });
-//   $(".portfolio-wrapper .row .col4:nth-child(2)").click(function(){
-//     $(".project-detail .content:nth-child(2)").show().css({"display":"inline-block"});
-//     $(".project-detail .content:nth-child(2)").siblings(".content").hide().css({"display":"none"});;
-//   });
-//   $(".portfolio-wrapper .row .col4:nth-child(3)").click(function(){
-//     $(".project-detail .content:nth-child(3)").show().css({"display":"inline-block"});
-//     $(".project-detail .content:nth-child(3)").siblings(".content").hide().css({"display":"none"});;
-//   });
-//   $(".portfolio-wrapper .row .col4:nth-child(4)").click(function(){
-//     $(".project-detail .content:nth-child(4)").show().css({"display":"inline-block"});
-//     $(".project-detail .content:nth-child(4)").siblings(".content").hide().css({"display":"none"});;
-//   });
-// });
-
 // scrollreveal
 (function scrollReveal() {
   window.sr = ScrollReveal();
 
   sr.reveal('.skills .col3 , .portfolio-wrapper .col4 , .ido .col4',{
     delay: 200,
-    reset: true,
+    reset: false,
     interval: 120,
     distance: '100px',
     origin: 'bottom',
