@@ -64,11 +64,11 @@
             opacity: 0;
             white-space: nowrap;
             overflow: hidden;
-            -webkit-animation: type 1.5s steps(20, end) 5s forwards;
-            -moz-animation: type 1.5s steps(20, end) 5s forwards;
-            -ms-animation: type 1.5s steps(20, end) 5s forwards;  
-            -o-animation: type 1.5s steps(20, end) 5s forwards;
-            animation: type 1.5s steps(20, end) 5s forwards;  
+            -webkit-animation: type 1.5s steps(20, end) 6s forwards;
+            -moz-animation: type 1.5s steps(20, end) 6s forwards;
+            -ms-animation: type 1.5s steps(20, end) 6s forwards;  
+            -o-animation: type 1.5s steps(20, end) 6s forwards;
+            animation: type 1.5s steps(20, end) 6s forwards;  
             span{
                 color: $reddish;
             }
@@ -96,11 +96,11 @@
             opacity: 0;
             white-space: nowrap;
             overflow: hidden;
-            -webkit-animation: type 2s steps(50, end) 7s forwards;
-            -moz-animation: type 2s steps(50, end) 7s forwards;  
-            -ms-animation: type 2s steps(50, end) 7s forwards;
-            -o-animation: type 2s steps(50, end) 7s forwards;
-            animation: type 2s steps(50, end) 7s forwards;
+            -webkit-animation: type 2s steps(50, end) 8s forwards;
+            -moz-animation: type 2s steps(50, end) 8s forwards;  
+            -ms-animation: type 2s steps(50, end) 8s forwards;
+            -o-animation: type 2s steps(50, end) 8s forwards;
+            animation: type 2s steps(50, end) 8s forwards;
         }
     }
 }
@@ -165,7 +165,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     text-align: center;
     .scroll-box{
