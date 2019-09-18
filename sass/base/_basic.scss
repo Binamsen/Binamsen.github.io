@@ -306,3 +306,33 @@ footer{
     }
 }
 .p-120{padding: 120px 15px;}
+
+// logocarousel-sec
+.logocarousel-sec{
+	margin: 0 0 100px 0;
+	.logo-carousel{
+		.item{
+			@include transition;
+			img{
+				max-height: 200px;
+				@include transition;
+			}
+			img:nth-child(2){
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				opacity: 0;
+			}
+			&:hover{
+				img:nth-child(1){
+					opacity: 0;
+				}
+				img:nth-child(2){
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

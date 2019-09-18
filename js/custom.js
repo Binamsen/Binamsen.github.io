@@ -23,6 +23,47 @@ for (let i = 0; i<logo.length; i++) {
 
 })();
 
+// package-carousel
+$('.logo-carousel').owlCarousel({
+  loop:true,
+  margin:80,
+  responsiveClass:true,
+  nav:true,
+  dots:false,
+  autoplay:true,
+  autoplayTimeout:4000,
+  responsive:{
+      0:{
+          loop:true,
+          items:1,
+          nav:true,
+          dots:false,
+          autoplay:true,
+          autoplayTimeout:4000
+      },
+      600:{
+          loop:true,
+          items:2,
+          nav:true,
+          dots:false,
+          autoplay:true,
+          autoplayTimeout:4000
+      },
+      768:{
+          loop:true,
+          items:3,
+          nav:true,
+          dots:false,
+          autoplay:true,
+          autoplayTimeout:4000
+      },
+      1000:{
+          items:5
+      }
+      
+  }
+});
+
 // moving the background on mouse movement
 var lFollowX = 0,
     lFollowY = 0,
